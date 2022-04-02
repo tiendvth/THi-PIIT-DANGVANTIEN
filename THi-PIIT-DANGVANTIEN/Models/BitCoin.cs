@@ -12,6 +12,8 @@ namespace THi_PIIT_DANGVANTIEN.Models
         [Key]
         public int Id { get; set; }
 
+        
+
         [Display(Name = "Tên BitCoin")]
         [Required(ErrorMessage = "Yêu cầu nhập tên BitCoin")]
         public string Name { get; set; }
@@ -35,6 +37,7 @@ namespace THi_PIIT_DANGVANTIEN.Models
         public DateTime createdAt { get; set; }
         public DateTime updatedAt { get; set; }
         public int status { get; set; }
+        public virtual Market Market { get; set; }
 
     }
 }
